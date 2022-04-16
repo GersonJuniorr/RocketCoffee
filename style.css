@@ -1,0 +1,238 @@
+body {
+    background-color: var(--background);
+    font-family: 'Manrope', sans-serif;
+}
+
+:root {
+    --background: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+.contentCentral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.frase1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.frase2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+    -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: #000;
+}
+
+body{
+    background-image: url(assets/blur-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+nav ul {
+    display: none;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+.logo-mobile {
+    display: flex;
+    align-content: center;
+    width: auto;
+}
+
+.btnOrder-desktop {
+    display: none;
+}
+
+.btn-mobile {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--border-menu-mobile);
+    margin-top: 1rem;
+    opacity: 20%;
+}
+
+.btnOrder-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    width: 12rem;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #8257E5;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.text-mobile p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 5rem;
+    font-size: 30px;
+}
+
+footer img {
+    margin-top: 6rem;
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(assets/blur-1.png), url(assets/blur-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    .header-content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+    
+    .logoRocket {
+        display: flex;
+        align-content: center;
+    }
+    
+    .logo-desktop {
+        display: flex;
+        align-content: center;
+        width: 50px;
+        display: flex;
+    }
+    
+    .logo-mobile {
+        display: none;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav ul li {
+        display: flex;
+        padding: 1.5rem 2rem;
+    }
+    
+    nav ul li a {
+        display: flex;
+        
+        text-decoration: none;
+        list-style: none;
+        color: #fff;
+    }
+    
+    nav ul li a:hover {
+        color: #8257E5;
+        transition: 1s;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+    
+    .btn-desktop {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-mobile {
+        display: none;
+    }
+    
+    .btnOrder-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.5px;
+        width: 12rem;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #8257E5;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .btnOrder-desktop:hover {
+        cursor: pointer;
+        transition: 1s;
+        background-color: var(--button);
+    }
+    
+    .contentCentral {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        justify-content: center;
+    }
+    
+    .frase1 {
+        color: white;
+        font-size: 80px;
+        font-weight: 700;
+    }
+    
+    .frase2 {
+        font-size: 80px;
+        font-weight: 700;
+        text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button),
+        -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+        color: #000;
+    }
+    .frase-mobile {
+        display: none;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+      
+      footer img {
+        margin-top: 1rem;
+        width: 63%;
+    }
+    
+}

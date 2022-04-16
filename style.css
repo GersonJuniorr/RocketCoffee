@@ -93,6 +93,15 @@ nav ul {
     font-weight: bold;
 }
 
+.btnOrder-mobile:hover {
+    transition: 1s;
+    background-color: #8257E5;
+}
+
+.btn-mobile img {
+    margin-left: 10px;
+}
+
 .text-mobile p {
     display: flex;
     justify-content: center;
@@ -106,9 +115,6 @@ footer img {
     margin-top: 6rem;
     width: 100%;
 }
-
-
-
 
 @media (min-width: 768px) {
     body {
